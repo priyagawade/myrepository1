@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.sauceDemoTestClasses.TC002_ValidateAddToCartFunctionality">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateAddToCartFunctionality"/>
+        </methods>
+      </class> <!-- com.sauceDemoTestClasses.TC002_ValidateAddToCartFunctionality -->
+      <class name="com.sauceDemoTestClasses.TC001_VerifyAllScenarios">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateLoginFunctionality"/>
+        </methods>
+      </class> <!-- com.sauceDemoTestClasses.TC001_VerifyAllScenarios -->
+      <class name="com.sauceDemoTestClasses.TC004_ValidateLogoutFunctionality">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateLogoutFunctionality"/>
+        </methods>
+      </class> <!-- com.sauceDemoTestClasses.TC004_ValidateLogoutFunctionality -->
+      <class name="com.sauceDemoTestClasses.TC003_ValidateMultipleProductAddedToCartFunctionality">
+        <methods>
+          <include name="setUp"/>
+          <include name="homePageFunctionality"/>
+        </methods>
+      </class> <!-- com.sauceDemoTestClasses.TC003_ValidateMultipleProductAddedToCartFunctionality -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
