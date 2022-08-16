@@ -8,15 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 public class LoginPOMClass 
 {
 
-	   WebDriver driver;
+	   WebDriver driver;                 // webdriver is a datatype
 	   
 	   @FindBy(css="#user-name")
-		private WebElement userName;
+		private WebElement userName;     //webelement is a datatype
+	   
 	   public void sendUsername()
 	   {
 		   userName.sendKeys("standard_user");
 		   System.out.println("Username is Entered");
 	   }
+	   
 	   @FindBy(css="#password")
     private WebElement password;
 	   
@@ -37,15 +39,11 @@ public class LoginPOMClass
 
 	   }
 	   
-	  
-		   
-	   
-	   
-	      public LoginPOMClass(WebDriver driver)
+	   public LoginPOMClass(WebDriver driver)
 	   {
 		   this.driver=driver;
 		   
-			PageFactory.initElements(this.driver, this);
+			PageFactory.initElements(driver, this);
 	   }
 
 }

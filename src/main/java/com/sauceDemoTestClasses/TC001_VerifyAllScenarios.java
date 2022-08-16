@@ -15,19 +15,17 @@ import com.sauceDemoUtilityClasses.UtilityClass;
 
 public class TC001_VerifyAllScenarios  extends TestBaseClass
 {
-	@Test
+	@Test(priority=1)
 	public void validateLoginFunctionality() throws IOException
  {
 	 
-		
-		
-		
 		String actualTitle= driver.getTitle();
 		System.out.println("actual Title is -" +actualTitle);
 		
 		 String expectedTitle ="Swag Labs";
 		 
 		Assert.assertEquals(actualTitle,expectedTitle);
+		
 		 UtilityClass.takeScreenshot(driver);
 		
 }
